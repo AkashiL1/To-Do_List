@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+
+  <!-- Fonte Libre Baskerville -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fa-solid fa-file-lines"></i> Lista de Tarefas</h1>
+      <button id="theme-toggle" title="Alternar tema" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+      </button>      
+    </div>      
+
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Adicione uma tarefa..." />
+
+      <!-- Novo campo de prioridade -->
+      <select id="priority-select">
+        <option value="low">🟢 Baixa</option>
+        <option value="medium" selected>🟡 Média</option>
+        <option value="high">🔴 Alta</option>
+      </select>           
+
+      <button id="add-btn">Adicionar</button>
+    </div>
+
+    <div class="task-info">
+      <span id="task-count">0 tarefas</span>
+    </div>
+   
+    <div id="filter-buttons">
+      <button data-filter="all" class="active">Todas</button>
+      <button data-filter="pending">Pendentes</button>
+      <button data-filter="completed">Concluídas</button>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
