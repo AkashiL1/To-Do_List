@@ -28,7 +28,3 @@ Uma aplicação web simples de lista de tarefas (To-Do List), onde você pode:
 ## 📌 Observações
 
 Este projeto foi desenvolvido com fins de aprendizado e prática em front-end.
-
----
-
-Feito com ❤️ por [Lucas Ribeiro](https://github.com/AkashiL1)
